@@ -40,6 +40,31 @@ public class PrimeNumberGeneratorTest extends TestCase {
 	
 	@Test
 	public void testIsPrimeNegative(){
-		
+		assertFalse(primes.isPrime(-1));
+	}
+	
+	@Test
+	public void testIsPrimeTwo(){
+		assertTrue(primes.isPrime(2));
+	}
+	
+	@Test
+	public void testIsPrimeSqrt(){
+		assertFalse(primes.isPrime(16));
+	}
+	
+	@Test
+	public void testIsPrimeFailByLoop(){
+		assertFalse(primes.isPrime(20));
+	}
+	
+	@Test
+	public void testIsPrimeMinInt(){
+		assertFalse(primes.isPrime(Integer.MIN_VALUE));
+	}
+	
+	@Test
+	public void testIsPrimeMaxInt(){
+		assertTrue(primes.isPrime(Integer.MAX_VALUE));
 	}
 }
