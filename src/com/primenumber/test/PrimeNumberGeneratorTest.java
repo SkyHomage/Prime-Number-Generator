@@ -123,13 +123,23 @@ public class PrimeNumberGeneratorTest extends TestCase {
 	}
 	
 	@Test
+	public void testIsPrimeThree(){
+		assertTrue(primes.isPrime(3));
+	}
+	
+	@Test
+	public void testIsPrimeFive(){
+		assertTrue(primes.isPrime(5));
+	}
+	
+	@Test
 	public void testIsPrimeSqrt(){
 		assertFalse(primes.isPrime(16));
 	}
 	
 	@Test
 	public void testIsPrimeFailByLoop(){
-		assertFalse(primes.isPrime(20));
+		assertFalse(primes.isPrime(49));
 	}
 	
 	@Test
