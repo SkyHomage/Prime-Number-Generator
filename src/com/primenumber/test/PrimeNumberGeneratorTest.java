@@ -21,4 +21,25 @@ public class PrimeNumberGeneratorTest extends TestCase {
 	public void testZero(){
 		
 	}
+	
+	@Test
+	public void testNegativeOne(){
+		
+	}
+	
+	@Test
+	public void testOne(){
+		
+	}
+	
+	
+	@Test
+	public void testIsPrimeZero(){
+		
+	}
+	
+	@Test
+	public void testIsPrimeNegative(){
+		
+	}
 }
