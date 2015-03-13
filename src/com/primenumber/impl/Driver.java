@@ -8,6 +8,7 @@ public class Driver {
 			+ "1 - Print primes from [start, end]\n"
 			+ "2 - Is Prime (n)?\n"
 			+ "3 - Exit";
+	static final int MAX_WIDTH = 30;
 
 	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
@@ -40,7 +41,12 @@ public class Driver {
 	}
 	
 	private static void printList(List<Integer> list){
-		for(int a : list) System.out.print(a +" ");
+		int numOnLine = 0;
+		for(int a : list) {
+			numOnLine++;
+			System.out.print(a +" ");
+			if(numOnLine % MAX_WIDTH == 0) System.out.println();
+		}
 		System.out.println();
 	}
 

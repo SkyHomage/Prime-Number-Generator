@@ -9,7 +9,10 @@ import org.junit.Test;
 
 import com.primenumber.impl.PrimeNumberGenerator;
 import com.primenumber.impl.RangeOfPrimes;
-
+/*
+ * Tester for prime number generators. Normally you would probably want to provide an expected output file to test
+ * the return of generate, but I just hardcoded results for the sake of time. 
+ */
 public class PrimeNumberGeneratorTest extends TestCase {
 
 	private PrimeNumberGenerator primes;
