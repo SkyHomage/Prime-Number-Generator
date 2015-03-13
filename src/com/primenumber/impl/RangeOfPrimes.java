@@ -50,7 +50,7 @@ public class RangeOfPrimes implements PrimeNumberGenerator{
 	public boolean isPrime(int value) {
 		
 		if(value <= 1) return false;
-		if(value == 2 || value == 3) return true; //since we start loop at 3 we must test if value if first 2 primes
+		if(value == 2 || value == 3) return true; //since we start loop at 3 we must test if value is first 2 primes
 		if(value % 2 == 0 || value % 3 == 0) return false;
 		int sqrt = (int)Math.sqrt(value);
 		if(sqrt*sqrt == value) return false;
