@@ -8,4 +8,4 @@ This is a java program that allows the printing of primes. Use the Driver.java p
 3 - exits
 
 
-Was thinking about making another class that implements PrimeNumberGenerator. This class will be called something like super generator and it will cache make use of threading, caching, and probably Sieve of Eratosthenes.
+Was thinking about making another class that implements PrimeNumberGenerator. This class will be called something like super generator and it will make use of threading, caching, and probably Sieve of Eratosthenes.
