@@ -35,7 +35,7 @@ public class PrimeNumberGeneratorTest extends TestCase {
 	
 	@Test
 	public void testIsPrimeZero(){
-		
+		assertFalse(primes.isPrime(0));
 	}
 	
 	@Test
