@@ -16,6 +16,7 @@ public class Driver {
 			choice = scn.nextInt();
 			executeCommand(choice, scn);
 		}
+		scn.close();
 		
 
 	}
@@ -35,7 +36,7 @@ public class Driver {
 				System.out.println(val + " is " + (p.isPrime(val) ? "prime." : " not prime."));
 				break;
 		}
-		scn.close();
+		
 		
 	}
 	
